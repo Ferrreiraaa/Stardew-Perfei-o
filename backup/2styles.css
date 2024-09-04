@@ -1,0 +1,30 @@
+/* Adicione estilos específicos para a aba de plantações aqui */
+.plantacao-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plantacao {
+    background-color: #e0f2f1; /* Verde claro */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1em;
+}
+
+.plantacao:hover {
+    background-color: #b2dfdb; /* Verde mais claro ao passar o mouse */
+    transform: translateY(-5px); /* Levanta o item ao passar o mouse */
+}
+
+.planted {
+    background-color: #00796b; /* Verde escuro */
+    color: white;
+    border: 1px solid #004d40;
+    box-shadow: 0 0 10px #004d40;
+}

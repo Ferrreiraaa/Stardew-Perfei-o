@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* Gradiente suave de azul */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #004d99; /* Azul escuro */
+    text-shadow: 2px 2px 4px #aaa;
+}
+
+h2 {
+    font-size: 2em;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #003366; /* Azul muito escuro */
+    text-shadow: 1px 1px 3px #888;
+}
+
+.fish-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fish {
+    background: #ffffff; /* Branco para contraste */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1em;
+    background-image: url('fish-pattern.png'); /* Imagem de fundo opcional */
+    background-size: cover; /* Ajusta a imagem de fundo para cobrir o elemento */
+    color: #333; /* Cor do texto */
+}
+
+#anchova {
+    background-image: url('images/anchova.png');
+}
+
+.fish:hover {
+    background-color: #e0f2f1; /* Azul muito claro ao passar o mouse */
+    transform: translateY(-5px); /* Levanta o item ao passar o mouse */
+}
+
+.captured {
+    background-color: #007acc; /* Azul vivo */
+    color: white;
+    border: 1px solid #005999;
+    box-shadow: 0 0 10px #005999;
+}
+
+small {
+    display: block;
+    margin-top: 8px;
+    color: #555;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .fish-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .fish-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Adicionando estilos para o cabeçalho e botões */
+header {
+    background: linear-gradient(to right, #004d99, #0066cc); /* Gradiente do cabeçalho */
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: #004d99; /* Azul escuro */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #003366; /* Azul muito escuro */
+}
